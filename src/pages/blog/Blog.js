@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { url } from "../../utils";
+import { Helmet } from "react-helmet";
 
 export default function Blog() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -42,6 +43,10 @@ export default function Blog() {
 
   return (
     <>
+      <Helmet>
+        <title>Blog</title>
+        <meta name="description" content="blog description" />
+      </Helmet>
       <h3>Blog Sayfası</h3>
 
       <input
