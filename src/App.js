@@ -20,6 +20,7 @@ function App() {
         <Home />
       </AuthProvider>
     </SiteProvider>
+    
   );
 >>>>>>> 11
 }
