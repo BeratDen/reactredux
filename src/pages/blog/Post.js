@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 
 export default function Post() {
   const { id, url } = useParams();
-  console.log(url);
 
   return (
     <div>
